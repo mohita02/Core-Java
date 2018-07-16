@@ -4,9 +4,9 @@ class duplicate
     public static void main(String a[])
     {
     int arr[];
-    arr=new int[10];
+    arr=new int[100];
     Scanner sc=new Scanner(System.in);
-   int n;
+    int n;
     System.out.println("enter the size of array");
     n=sc.nextInt();
     System.out.println("enter the elements in an array");
@@ -18,10 +18,10 @@ class duplicate
     {
         for(int j=i+1;j<n;)
         {
-            if(a[i]==a[j])
+            if(arr[i]==arr[j])
             {
                 for(int k=j;k<n-1;k++)
-                a[k]=a[k+1];
+                arr[k]=arr[k+1];
 
               --n;                
                 
